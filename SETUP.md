@@ -63,3 +63,19 @@ pip install streamlit
 ```
 streamlit run app.py
 ```
+
+# Docker in Local
+
+### To build and run in local using the docker compose
+
+- Make sure to have the docker desktop up and running
+
+```
+docker-compose up --build
+```
+
+### Stop containers using docker compose
+
+```
+docker-compose down
+```
