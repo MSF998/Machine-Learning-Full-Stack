@@ -1,0 +1,87 @@
+# Development Commands
+
+### Create backend directory
+
+```
+mkdir backend
+cd backend
+```
+
+### Create virtual environment
+
+```
+python -m venv venv
+```
+
+### Activate backend environment
+
+```
+.\venv\Scripts\activate
+```
+
+### To install any python package
+
+```
+pip install <package_name>
+pip install "fastapi[standard]"
+```
+
+### Run FastAPI service in development mode
+
+```
+fastapi dev main.py
+```
+
+### Create frontend directory
+
+```
+mkdir frontend
+cd frontend
+```
+
+### Create virtual environment
+
+```
+python -m venv venv
+```
+
+### Activate frontend environment
+
+```
+.\venv\Scripts\activate
+```
+
+### To install any python package
+
+```
+pip install <package_name>
+pip install streamlit
+```
+
+### Run Streamlit service
+
+```
+streamlit run app.py
+```
+
+# Docker in Local
+
+### To build and run in local using the docker compose
+
+- Make sure to have the docker desktop up and running
+
+```
+docker-compose up --build
+```
+
+### To run using the docker compose
+
+```
+docker-compose up
+```
+
+### Stop containers using docker compose
+
+```
+docker-compose down
+```
