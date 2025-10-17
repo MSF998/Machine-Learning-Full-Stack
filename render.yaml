@@ -5,8 +5,7 @@ services:
     env: docker
     rootDir: backend # Specifies the subdirectory for this service
     plan: free # Or your desired plan
-    healthCheck:
-      path: / # Change if you have a specific /health endpoint
+    healthCheckPath: / # This line is now corrected
 
   # A Web Service for the Streamlit frontend
   - type: web
