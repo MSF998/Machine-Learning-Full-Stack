@@ -1,22 +1,18 @@
 services:
   # A Web Service for the FastAPI backend
   - type: web
-    name: ml-backend # Choose a unique name
+    name: ml-backend
     env: docker
-    rootDir: backend # Specifies the subdirectory for this service
-    plan: free # Or your desired plan
-    healthCheckPath: / # This line is now corrected
+    rootDir: backend
+    plan: free
+    healthCheckPath: /
 
   # A Web Service for the Streamlit frontend
   - type: web
-    name: ml-frontend # Choose a unique name
+    name: ml-frontend
     env: docker
-    rootDir: frontend # Specifies the subdirectory for this service
-    plan: free # Or your desired plan
+    rootDir: frontend
+    plan: free
     envVars:
       - key: API_URL
-        # This special value injects the URL of your backend service
-        fromService:
-          type: web
-          name: ml-backend # Must match the name of your backend service above
-          property: url
+        value: http://ml-backend:8000 # This is the corrected line
