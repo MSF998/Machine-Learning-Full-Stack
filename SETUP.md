@@ -74,6 +74,12 @@ streamlit run app.py
 docker-compose up --build
 ```
 
+### To run using the docker compose
+
+```
+docker-compose up
+```
+
 ### Stop containers using docker compose
 
 ```
