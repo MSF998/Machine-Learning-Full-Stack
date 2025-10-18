@@ -5,5 +5,9 @@ import os
 st.header("Hello")
 
 API_URL = os.getenv('API_URL','http://localhost:8000')
-st.info(API_URL)
-st.info((requests.get(f"{API_URL}/").text))
+
+test_btn = st.button("TEST")
+
+if test_btn:
+    st.info(API_URL)
+    st.info((requests.get(f"{API_URL}/").text))

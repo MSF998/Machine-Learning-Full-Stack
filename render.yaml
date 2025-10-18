@@ -15,4 +15,4 @@ services:
     plan: free
     envVars:
       - key: API_URL
-        value: http://ml-backend:8000 # This is the corrected line
+        value: http://backend:8000 # This is the corrected line
